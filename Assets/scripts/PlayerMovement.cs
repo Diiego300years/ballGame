@@ -6,7 +6,6 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody playerRigidbody;
     private Collider myCollider;
     private bool isGrounded;
-    public int score = 0;
 
     void Start()
     {

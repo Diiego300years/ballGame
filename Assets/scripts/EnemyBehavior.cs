@@ -39,7 +39,8 @@ public class Maszerowanie : MonoBehaviour
             var rb = sphere.AddComponent<Rigidbody>();
             sphere.transform.position = transform.TransformPoint(1 * Vector3.forward);
             sphere.transform.localScale = 0.3333f * Vector3.one;
-            rb.velocity = transform.TransformDirection(5 * Vector3.forward);
+            rb.velocity = transform.TransformDirection(10 * Vector3.forward);
+
             StartCoroutine("Bullet", sphere);
             yield return null;
 
